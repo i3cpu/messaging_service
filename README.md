@@ -6,12 +6,13 @@ User Guide for the System for Sending Newsletters to Clients
 2. Activate or create a virtual environment (venv) to isolate the project.
   Install the required dependencies listed in the requirements.txt file using the command:
       pip3 install -r requirements.txt
-3.Run the Django development server:
+3. Run the Django development server:
       python3 manage.py runserver
-4.Activate Celery Worker:
+4. Activate Celery Worker:
       celery -A messaging_service worker -l INFO
-5.Activate Celery Beat:
+5. Activate Celery Beat:
       celery -A messaging_service beat -l INFO
+
 
 Using API Endpoints:
   1) Routes for Clients (clients):
