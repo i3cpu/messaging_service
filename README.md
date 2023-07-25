@@ -16,16 +16,39 @@ statistics.
 1. Make sure you have Python and pip (Python package installer) installed.
 2. Activate or create a virtual environment (venv) to isolate the project.
   Install the required dependencies listed in the requirements.txt file using the command:
-      pip3 install -r requirements.txt
+
+<pre>
+```   pip3 install -r requirements.txt
+```
+</pre>
+
 3.  Perform Django database migrations. Migrations are needed to create database tables related to your project's models. Execute the following commands:
-      python3 manage.py makemigrations
+<pre>
+```   python3 manage.py makemigrations
       python3 manage.py migrate
-5.  Run the Django development server:
-      python3 manage.py runserver
-6. Activate Celery Worker:
-      celery -A messaging_service worker -l INFO
-7. Activate Celery Beat:
-      celery -A messaging_service beat -l INFO
+```
+</pre>
+
+4.  Run the Django development server:
+<pre>
+```   python3 manage.py runserver
+```
+</pre>
+    
+5. Activate Celery Worker:
+<pre>
+```    celery -A messaging_service worker -l INFO
+```
+</pre>
+
+6. Activate Celery Beat:
+<pre>
+```    celery -A messaging_service beat -l INFO
+```
+</pre>
+
+
+      
 
 
 ## Using API Endpoints:
