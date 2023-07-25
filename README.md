@@ -1,6 +1,6 @@
 # messaging_service
 
-About
+##About
 
 The project involves the development of a messaging service for
 sending messages to clients. Users can create, manage, and schedule
@@ -12,7 +12,7 @@ with external services do not affect the stability of message broadcasts.
 The API allows users to manage clients, broadcasts, and obtain
 statistics.
 
-User Guide for the System for Sending Newsletters to Clients
+##User Guide for the System for Sending Newsletters to Clients
 1. Make sure you have Python and pip (Python package installer) installed.
 2. Activate or create a virtual environment (venv) to isolate the project.
   Install the required dependencies listed in the requirements.txt file using the command:
@@ -28,8 +28,9 @@ User Guide for the System for Sending Newsletters to Clients
       celery -A messaging_service beat -l INFO
 
 
-Using API Endpoints:
-  1) Routes for Clients (clients):
+##Using API Endpoints:
+
+  ###1) Routes for Clients (clients):
   
     1. Get the List of Clients and Create a New Client::
         ◦ URL: /clients/
@@ -48,7 +49,7 @@ Using API Endpoints:
         
   ![image](https://github.com/i3cpu/messaging_service/assets/106595656/7ef79711-dd6a-49b5-94fd-99fb243d0985)
 
-  2) Routes for Campaigns (сampaigns):
+  ###2) Routes for Campaigns (сampaigns):
 
     1. Get the List of Campaigns and Create a New Campaign:
         ◦ URL: /campaigns/
@@ -67,7 +68,7 @@ Using API Endpoints:
 ![image](https://github.com/i3cpu/messaging_service/assets/106595656/35d73dff-85ef-4c19-8d6b-0416f25a4af3)
 
 
- 3) Routes for Messages(messages):
+ ###3) Routes for Messages(messages):
     1. Get the List of Messages and Create a New Message:
         ◦ URL: /messages/
         ◦ HTTP Methods: GET, POST
