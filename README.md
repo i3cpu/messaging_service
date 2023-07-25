@@ -1,6 +1,7 @@
 # messaging_service
 
-About 
+About
+
 The project involves the development of a messaging service for
 sending messages to clients. Users can create, manage, and schedule
 message broadcasts with specified rules. The service automatically
