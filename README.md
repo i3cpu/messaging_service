@@ -1,16 +1,29 @@
 # messaging_service
-system for sending newsletters to clients
+
+About 
+The project involves the development of a messaging service for
+sending messages to clients. Users can create, manage, and schedule
+message broadcasts with specified rules. The service automatically
+sends messages to clients based on defined filters and scheduled times.
+Comprehensive statistics are collected for each sent message to
+generate reports. Error handling is implemented to ensure that issues
+with external services do not affect the stability of message broadcasts.
+The API allows users to manage clients, broadcasts, and obtain
+statistics.
 
 User Guide for the System for Sending Newsletters to Clients
 1. Make sure you have Python and pip (Python package installer) installed.
 2. Activate or create a virtual environment (venv) to isolate the project.
   Install the required dependencies listed in the requirements.txt file using the command:
       pip3 install -r requirements.txt
-3. Run the Django development server:
+3.  Perform Django database migrations. Migrations are needed to create database tables related to your project's models. Execute the following commands:
+      python3 manage.py makemigrations
+      python3 manage.py migrate
+5.  Run the Django development server:
       python3 manage.py runserver
-4. Activate Celery Worker:
+6. Activate Celery Worker:
       celery -A messaging_service worker -l INFO
-5. Activate Celery Beat:
+7. Activate Celery Beat:
       celery -A messaging_service beat -l INFO
 
 
